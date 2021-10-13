@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,300,600);
+.card {
+    /* background-color: white; */
+    color: #435757;
+    /* background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+   */
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 55%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 100px -25px rgba(0, 0, 0);
+    transition: all 0.7s cubic-bezier(.46, .18, .6, 1.3);
+    transform-style: preserve-3d;
+    font-size: 18px;
+}
+
+body {
+    font-weight: 300;
+    color: #435757;
+    background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+    perspective: 2000px;
+}
+
+.c-left {
+    float: left;
+}
+
+.c-right {
+    float: right;
+}
+
+.card_content {
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.card_one {
+    background: url(https://drive.google.com/uc?export=view&id=1n19nJ7bSzjebPLlLcUVoHltzG6HlV8Cr);
+}
+
+.card_two {
+    background: url(https://drive.google.com/uc?export=view&id=17oJDT6aECE0im4LzIh1a2yzhMdbjY1dw);
+}
+
+.card_three {
+    background: url(https://drive.google.com/uc?export=view&id=1ynIqFzWz-qDmxXiGqsY8XHBL1YHX0yqh);
+}
+
+.card_four {
+    background: url(https://drive.google.com/uc?export=view&id=1MVh97F_Pv6WXTtWO-5iDGeJsMNRemK3W);
+}
+.card_five {
+    background: url(https://drive.google.com/uc?export=view&id=1t-aM8eMAsb2eW9xPN3JPxAg0-Bd5Vmfa);
+}
+
+.card_front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card_back {
+    position: relative;
+    top: -300px;
+    /* background: white; */
+    transform: rotate(180deg) rotateY(180deg);
+}
+
+.card_hover {
+    transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.button-primary {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+span {
+    color: red;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 435px) {
+    .card {
+        height: 450px;
+    }
+    .card_back {
+        top: -450px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        height: 600px;
+    }
+    .card_back {
+        top: -600px;
+    }
+}
+
+@media (max-width: 220px) {
+    .card {
+        height: 800px;
+    }
+    .card_back {
+        top: -800px;
+    }
+}

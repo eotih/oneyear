@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>I love you 2ProseH</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+      <div class="card c-left">
+        <div class="card_front card_content card_one"></div>
+        <div class="card_back card_content">Đã một năm kể từ ngày em bước vào cuộc đời anh, kể từ ngày đó cuộc đời anh
+          như một cuốn phim vậy. Chúng ta đã có vui buồn cũng nhau, cùng nhau đi khắp nơi, cùng nhau trên mọi nẽo đường.
+          <span>❤</span> </div>
+      </div>
+
+      <div class="card c-right">
+        <div class="card_front card_content card_two"></div>
+        <div class="card_back card_content">Trong tâm trí anh, mỗi khi anh thức dậy, điều đầu tiên luôn là tìm đến điện
+          thoại và nhắn tin cho em. </div>
+      </div>
+
+      <div class="card c-left">
+        <div class="card_front card_content card_three"></div>
+        <div class="card_back card_content">Đây là những tấm hình mà mình cùng đã đi shoot cùng nhau tại landmark81 lúc 12/2020.
+        </div>
+      </div>
+
+      <div class="card c-right">
+        <div class="card_front card_content card_four"></div>
+        <div class="card_back card_content">Tụi mình sẽ còn có những lần đi shoot cùng với nhau.<span>❤</span></div>
+      </div>
+      <div class="card c-left">
+        <div class="card_front card_content card_five"></div>
+        <div class="card_back card_content">Và hơn tất cả, Anh yêu Em.<span>❤</span></br>
+          <a href="./index.html">Quay lại trang chủ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+
+  window.onload = function () {
+
+    var card = document.getElementsByClassName("card");
+    for (var i = 0; i < card.length; i++) {
+      card[i].onclick = function () {
+        this.classList.toggle("card_hover");
+      }
+    }
+  }
+
+</script>
+
+</html>
